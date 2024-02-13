@@ -1,4 +1,3 @@
-// Importing the prompt package
 const prompt = require('prompt');
 
 // Function to generate computer's selection
