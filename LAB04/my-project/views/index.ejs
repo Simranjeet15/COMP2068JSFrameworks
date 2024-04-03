@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Favorite Football Players - Home</title>
+    <!-- Include CSS stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        /* Professional CSS style for the title */
+        .title {
+            font-size: 2.5rem; /* Adjust font size as needed */
+            color: #333; /* Dark text color */
+            text-align: center; /* Center align the text */
+            /* margin-top: 10px; Add space below the title */
+            font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+            font-weight: bold; /* Make the title bold */
+        }
+
+        /* Style for paragraph text */
+        p {
+            font-size: 1.2rem; /* Adjust font size for paragraph text */
+            color: #666; /* Dark gray text color */
+            line-height: 1.5; /* Set line height for better readability */
+            margin-bottom: 15px; /* Add space below each paragraph */
+        }
+
+        /* Apply linear gradient background */
+        body {
+            background: linear-gradient(135deg, #00FF00, #FFFF00); /* Greenish gradient colors */
+            height: 100vh; /* Set height to cover the viewport */
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            display: flex; /* Use flexbox for vertical centering */
+            flex-direction: column; /* Stack child elements vertically */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+
+        /* Center content horizontally */
+        .container {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+       
+       
+    </style>
+</head>
+<body>
+    <!-- Include header partial with navbar -->
+    <% include partials/header %>
+
+    <!-- Main content for the Home page -->
+    <div class="container">
+        <h2 class="title">Welcome to Our Favorite Football Players Website!</h2>
+        <p>Are you a fan of football and the talented players who dominate the field?</p>
+        <p>Here, we celebrate the athleticism and skill of football players and provide a platform to explore the careers and achievements of some of the most beloved athletes in the sport.</p>
+        <p>Discover inspiring biographies, relive iconic matches, and delve into the thrilling world of football.</p>
+        <p>Whether you're interested in legendary footballers or rising stars, you'll find a wealth of information and excitement right here.</p>
+        <p>Start your journey today and immerse yourself in the electrifying world of football!</p>
+    </div>
+
+    <!-- Include footer partial -->
+    <% include partials/footer %>
+</body>
+</html>

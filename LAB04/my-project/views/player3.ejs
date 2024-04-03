@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neymar Jr. - Brazilian Football Star</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        /* Professional CSS style for the title */
+        .title {
+            font-size: 2.5rem; /* Adjust font size as needed */
+            color: #333; /* Dark text color */
+            text-align: center; /* Center align the text */
+            margin-top: 80px; /* Add space below the title */
+            font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+            font-weight: bold; /* Make the title bold */
+        }
+
+        /* Style for footballer details */
+        .footballer-details {
+            margin: 30px auto; /* Center the footballer details */
+            max-width: 600px; /* Limit width to improve readability */
+            padding: 20px; /* Add padding for better visual appearance */
+            background-color: #fff; /* White background color for footballer details */
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        }
+
+        /* Style for footballer image */
+        .footballer-image {
+            width: 100%; /* Ensure the image fills the container */
+            border-radius: 10px; /* Add rounded corners */
+            margin-bottom: 20px; /* Add space below the image */
+        }
+
+        /* Style for footballer name */
+        .footballer-name {
+            font-size: 1.8rem; /* Adjust font size for footballer name */
+            color: #333; /* Dark text color */
+            margin-bottom: 10px; /* Add space below the footballer name */
+        }
+
+        /* Style for footballer bio */
+        .footballer-bio {
+            font-size: 1.2rem; /* Adjust font size for footballer bio */
+            color: #666; /* Dark gray text color */
+            line-height: 1.5; /* Set line height for better readability */
+            margin-bottom: 20px; /* Add space below the footballer bio */
+        }
+
+        /* Apply linear gradient background */
+        body {
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Light grey gradient colors */
+            min-height: 100vh; /* Set minimum height to cover the viewport */
+            display: flex; /* Use flexbox for vertical centering */
+            flex-direction: column; /* Stack child elements vertically */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+    </style>
+</head>
+<body>
+    <!-- Include header partial with navbar -->
+    <% include partials/header %>
+
+    <!-- Main content for Neymar Jr. page -->
+    <div class="container">
+        <div class="footballer-details">
+            <img class="footballer-image" src="/images/image3.jpeg" alt="Neymar Jr.">
+            <h2 class="footballer-name">Neymar Jr.</h2>
+            <p class="footballer-bio">
+                Neymar Jr. is a Brazilian professional footballer widely regarded as one of the most skillful and talented players of his generation. Born on February 5, 1992, in Mogi das Cruzes, Brazil, Neymar rose to prominence at a young age with his exceptional dribbling ability, flair, and creativity on the field.
+                <br><br>
+                Neymar began his professional career at Santos FC in Brazil, where he quickly became a sensation, winning numerous titles and earning praise from fans and experts alike. In 2013, he made a high-profile transfer to FC Barcelona, forming a formidable attacking trio with Lionel Messi and Luis Suárez.
+                <br><br>
+                During his time at Barcelona, Neymar won numerous domestic and international trophies, including the UEFA Champions League. In 2017, he made a record-breaking transfer to Paris Saint-Germain (PSG), becoming the most expensive footballer in history at the time.
+                <br><br>
+                Known for his electrifying playing style, Neymar is renowned for his speed, agility, and technical skills, making him a nightmare for defenders to handle. He has represented the Brazilian national team on numerous occasions, winning titles such as the Copa America and Olympic gold medals.
+                <br><br>
+                Off the field, Neymar is also known for his philanthropy and charitable work, supporting various causes to improve the lives of disadvantaged children in Brazil and beyond.
+            </p>
+        </div>
+    </div>
+
+    <!-- Include footer partial -->
+    <% include partials/footer %>
+</body>
+</html>

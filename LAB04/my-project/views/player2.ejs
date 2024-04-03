@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lionel Messi - Argentine Football Legend</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        /* Professional CSS style for the title */
+        .title {
+            font-size: 2.5rem; /* Adjust font size as needed */
+            color: #333; /* Dark text color */
+            text-align: center; /* Center align the text */
+            margin-top: 80px; /* Add space below the title */
+            font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+            font-weight: bold; /* Make the title bold */
+        }
+
+        /* Style for footballer details */
+        .footballer-details {
+            margin: 30px auto; /* Center the footballer details */
+            max-width: 600px; /* Limit width to improve readability */
+            padding: 20px; /* Add padding for better visual appearance */
+            background-color: #fff; /* White background color for footballer details */
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        }
+
+        /* Style for footballer image */
+        .footballer-image {
+            width: 100%; /* Ensure the image fills the container */
+            border-radius: 10px; /* Add rounded corners */
+            margin-bottom: 20px; /* Add space below the image */
+        }
+
+        /* Style for footballer name */
+        .footballer-name {
+            font-size: 1.8rem; /* Adjust font size for footballer name */
+            color: #333; /* Dark text color */
+            margin-bottom: 10px; /* Add space below the footballer name */
+        }
+
+        /* Style for footballer bio */
+        .footballer-bio {
+            font-size: 1.2rem; /* Adjust font size for footballer bio */
+            color: #666; /* Dark gray text color */
+            line-height: 1.5; /* Set line height for better readability */
+            margin-bottom: 20px; /* Add space below the footballer bio */
+        }
+
+        /* Apply linear gradient background */
+        body {
+            background: linear-gradient(135deg, #80dfff, #0080ff); /* Blue gradient colors */
+            min-height: 100vh; /* Set minimum height to cover the viewport */
+            display: flex; /* Use flexbox for vertical centering */
+            flex-direction: column; /* Stack child elements vertically */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+    </style>
+</head>
+<body>
+    <!-- Include header partial with navbar -->
+    <% include partials/header %>
+
+    <!-- Main content for Lionel Messi page -->
+    <div class="container">
+        <div class="footballer-details">
+            <img class="footballer-image" src="/images/image2.jpeg" alt="Lionel Messi">
+            <h2 class="footballer-name">Lionel Messi</h2>
+            <p class="footballer-bio">
+                Lionel Messi is an Argentine professional footballer widely regarded as one of the greatest players of all time. Born on June 24, 1987, in Rosario, Argentina, Messi has achieved unparalleled success throughout his illustrious career.
+                <br><br>
+                Messi rose to prominence at an early age, joining the youth academy of FC Barcelona at just 13 years old. He made his first-team debut for Barcelona in 2004 and quickly established himself as a key player for the club. Over the years, Messi has shattered numerous records and won countless individual awards, including multiple FIFA Ballon d'Or titles.
+                <br><br>
+                Known for his exceptional dribbling skills, vision, and goal-scoring ability, Messi has mesmerized football fans around the world with his performances on the field. He has helped lead Barcelona to numerous domestic and international titles, including multiple UEFA Champions League trophies.
+                <br><br>
+                In addition to his club success, Messi has also made a significant impact on the international stage, representing the Argentine national team. He has played in multiple FIFA World Cup tournaments and has won the prestigious Copa America title with Argentina.
+                <br><br>
+                Off the field, Messi is admired for his humility, philanthropy, and dedication to charitable causes. He continues to inspire millions of fans with his talent, professionalism, and love for the beautiful game.
+            </p>
+        </div>
+    </div>
+
+    <!-- Include footer partial -->
+    <% include partials/footer %>
+</body>
+</html>

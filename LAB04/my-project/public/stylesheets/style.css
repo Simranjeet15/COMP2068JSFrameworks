@@ -1,0 +1,229 @@
+/* CSS Styles */
+:root {
+  --color-primary: #f857a8;
+  --color-secondary: #ff5858;
+  --color-neutral-lt: #fff;
+  --color-neutral-med: #ddd;
+  --color-neutral-dk: #444;
+}
+
+/* Mixins */
+/* Mixin for main gradient */
+@mixin main-gradient {
+  background: var(--color-primary);
+  background: -webkit-linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+}
+
+/* Mixin for shadow box */
+@mixin shadow-box {
+  background-color: var(--color-neutral-lt);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mixin for skew */
+@mixin skew {
+  transform: skew(-20deg);
+}
+
+/* Mixin for unskew */
+@mixin unskew {
+  transform: skew(20deg);
+}
+
+/* Reset */
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layout */
+body {
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+  padding-top: 4em
+}
+
+section {
+  height: 100vh;
+}
+
+.hea{
+  color: rgb(26, 255, 0)
+}
+
+/* Helpers */
+.skew {
+  @include skew;
+}
+
+.un-skew {
+  @include unskew;
+}
+
+/* Navbar */
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 23 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background:var(--color-neutral-dk);
+}
+
+#nav {
+  @include shadow-box;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  height: 4em;
+  overflow: hidden;
+
+  &.nav-visible {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 4em;
+  flex-grow: 1;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1em;
+}
+
+span.gradient {
+  @include main-gradient;
+  padding: 0 1em;
+  position: relative;
+  right: 1em;
+  margin-right: auto;
+
+  &:hover {
+    animation-name: logo-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+  }
+}
+
+h1.logo {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  color: var(--color-neutral-lt);
+}
+
+h1.logo a {
+  text-decoration: none;
+  color: var(--color-neutral-lt);
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid var(--color-neutral-med);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn-nav {
+  color: var(--color-primary);
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (min-width: 800px) {
+  #nav-wrapper {
+    overflow: hidden;
+  }
+
+  #nav {
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .nav-link {
+    border-top: none;
+  }
+
+  .right {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    left: 1.5em;
+    height: auto;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  .nav a.active {
+    @include main-gradient;
+    color: #fff;
+  }
+
+  .nav-link-span {
+    @include unskew;
+    display: inline-block;
+  }
+
+  .nav-link {
+    @include skew;
+    color: #777;
+    text-decoration: none;
+
+    &:last-child {
+      padding-right: 3em;
+    }
+  }
+
+  a:hover.nav-link:not(.active) {
+    color: var(--color-neutral-dk);
+    background: var(--color-neutral-med);
+    background: linear-gradient(45deg, var(--color-neutral-lt), #ddd);
+  }
+}
+
+@keyframes logo-hover {
+  20% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
+}
